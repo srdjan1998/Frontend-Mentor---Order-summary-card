@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("file:///C:/Users/pc/Desktop/order-summary-component-main/images/pattern-background-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+  font-family: 'Red Hat Display', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.container {
+  width: 87vw;
+  background-color: white;
+  border-radius: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 29px;
+  color: #1f2e55;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+header p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #717fa6;
+  width: 83%;
+  text-align: center;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+
+.middle {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.middle a {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 17px;
+  color: #382ae1;
+}
+
+.middle>a:hover {
+  color: #766cf1;
+  text-decoration: none;
+}
+
+.annual {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1f2e55;
+  margin-bottom: 3px;
+}
+
+.year {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #717fa6;
+}
+
+.plan {
+  margin-left: -10%;
+}
+
+footer {
+  font-size: 11px;
+  line-height: 14px;
+  color: lightblue;
+  text-align: center;
+  margin-top: 24px;
+}
+
+footer a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+.name {
+  color: darkblue;
+}
+
+.buttons {
+  margin-top: 24px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.proceed {
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  color: white;
+  background-color: #382ae1;
+  border-radius: 11px;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  padding: 15px 64px;
+  text-decoration: none;
+}
+
+.payment:hover {
+  background-color: #766cf1;
+}
+
+.cancel {
+  color: #717fa6;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  background: transparent;
+  text-decoration: none;
+}
+
+.cancel:hover {
+  color: #1f2e55;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    background-image: url("file:///C:/Users/pc/Desktop/order-summary-component-main/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    width: 32vw;
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  header p {
+    font-size: 16px;
+    line-height: 26px;
+    width: 75%;
+  }
+
+  .middle a {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .annual {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 6px;
+  }
+
+  .per-year {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
